@@ -47,7 +47,7 @@ function App(): ReactElement<any, any> {
     document.body.appendChild(renderer.domElement);
 
     const loader = new GLTFLoader();
-    loader.load("/scene.gltf", function (gltf) {
+    loader.load("./scene.gltf", function (gltf) {
       const car = gltf.scene.children[0];
       car.scale.set(1, 1, 1);
       scene.add(gltf.scene);
